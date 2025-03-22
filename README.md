@@ -12,7 +12,7 @@ This digital version uses your webcam and hand tracking technology to automatica
 
 1. Click "Start Game" to begin
 2. The game will display various items one at a time (animals, birds, objects, etc.)
-3. You have 1.5 seconds to respond:
+3. You have 1 second to respond:
    - If the item can fly (birds, insects, airplanes, etc.), raise your hand in front of the camera
    - If the item cannot fly (dog, car, table, etc.), keep your hands out of view
 4. Score a point for each correct response
