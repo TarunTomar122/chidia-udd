@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidiya Udd Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chidiya Udd Game</h1>
+        <div class="game-info">
+            <div class="score-container">
+                <span>Score: </span>
+                <span id="score">0</span>
+            </div>
+            <div class="timer-container">
+                <span>Time: </span>
+                <span id="timer">1s</span>
+            </div>
+        </div>
+        
+        <div class="video-container">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+            <div id="item-prompt">Get Ready...</div>
+            <div id="gesture-result">Waiting for hand...</div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="start-game">Start Game</button>
+            <button id="reset-game">Reset Game</button>
+        </div>
+        
+        <div class="instructions">
+            <h2>How to Play:</h2>
+            <p>1. The game will show different items (animals, birds, objects, etc.)</p>
+            <p>2. Raise your hand ONLY when the item can fly!</p>
+            <p>3. You have 1 second to respond.</p>
+            <p>4. Be careful! The game will try to trick you.</p>
+            <p>5. If you respond incorrectly or too slow, the game ends.</p>
+        </div>
+    </div>
+
+    <!-- Load MediaPipe Handpose model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
